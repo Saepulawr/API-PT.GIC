@@ -77,12 +77,13 @@ $route[ADMIN_NAMESPACE_URL.'/(:any)/(:any)/(:any)'] = '$1/backend/$1/$2/$3';
 $route[ADMIN_NAMESPACE_URL.'/(:any)/(:any)/(:any)/(:any)'] = '$1/backend/$1/$2/$3/$3';
 
 
+
 //custom routes api
 //contact
-$route['daftar'] = 'contact/api/contact/all';
-$route['buat'] = 'contact/api/contact/add';
-$route['ubah'] = 'contact/api/contact/update';
-$route['hapus'] = 'contact/api/contact/delete';
+$route['api/daftar'] = 'contact/api/contact/all';
+$route['api/buat'] = 'contact/api/contact/add';
+$route['api/ubah'] = 'contact/api/contact/update';
+$route['api/hapus'] = 'contact/api/contact/delete';
 //end custom
 
 $route['api/user/(:any)'] = 'api/user/$1';
